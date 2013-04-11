@@ -1,10 +1,4 @@
-import string
-
-def isLower(ch):
-    return string.find(string.lowercase, ch) != -1
-
-def isUpper(ch):
-    return not isLower(ch)
+import utilities
 
 def gimmeEmptyStat():
     """ Returns an empty array with letters """
@@ -43,7 +37,7 @@ def getStatOfText(file_encrypt):
     for i in range(len(te)):
         c = te[i]
         for j in range(len(countStat)):
-            if isUpper(c):
+            if utilities.isUpper(c):
                 c = c.lower()
             if c == countStat[j][0]:
                 countStat[j][1] = countStat[j][1] + 1
@@ -51,6 +45,7 @@ def getStatOfText(file_encrypt):
     return countStat
 
 def writeGuessedFile(fileEncrypt, fileGuessed, fixedStat, textStat):
+    """ Algorithm that writes the guessed file from fileEncrypt and some statistics """
 
     f = open(fileEncrypt, 'r')
     o = open(fileGuessed, 'w')
@@ -65,7 +60,7 @@ def writeGuessedFile(fileEncrypt, fileGuessed, fixedStat, textStat):
     for c in t:
 
         for f in range(len(textStat)):
-            if isUpper(c):
+            if utilities.isUpper(c):
                 c = c.lower()
                 wasUpper = True
             if c == textStat[f][0]:
@@ -91,20 +86,18 @@ def guess(file_encrypt, file_guessed):
     fixedStat = gimmeStatArray()
     orderedFixedStat = orderedStatArray(fixedStat)
 
-    l=''
     stampa=''
     for l in orderedFixedStat:
          stampa = stampa + l[0] + " "
-    print 'Statistiche fisse: ' + stampa
+    print 'Fixed statistics: ' + stampa
 
     textStat = getStatOfText(file_encrypt)
     orderedTextStat = orderedStatArray(textStat)
 
-    l=''
     stampa=''
     for l in orderedTextStat:
         stampa = stampa + l[0] + " "
-    print 'Statistiche testo: ' + stampa
+    print 'Text statistics:  ' + stampa
 
     writeGuessedFile(file_encrypt, file_guessed, orderedFixedStat, orderedTextStat)
 

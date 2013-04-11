@@ -1,10 +1,4 @@
-import string
-
-def isLower(ch):
-    return string.find(string.lowercase, ch) != -1
-
-def isUpper(ch):
-    return not isLower(ch)
+import utilities
 
 def gimmeOrderedLetterArray():
     """ Returns an array with ordered letters from a to z """
@@ -45,7 +39,7 @@ def algorithm(file_input, file_output, matches):
     for c in t:
 
         for m in range(len(matches)):
-            if isUpper(c):
+            if utilities.isUpper(c):
                 c = c.lower()
                 wasUpper = True
             if c == matches[m][0]:
