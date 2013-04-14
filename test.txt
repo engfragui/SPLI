@@ -2,7 +2,7 @@ ALICE NEL PAESE DELLE MERAVIGLIE
 (l scambiata con r)
 Fixed statistics: e a i o n r t l s c d m u p v g h b f z q j y k w x
 Text statistics:  e a i o n l r s t c d u p m g v h f b z q x k w y j
-Letters number: 145709
+Letters number: 145.709
 Guessed letters percentage: 72.02 %
 Guessed words percentage: 25.38 %
 
@@ -11,9 +11,17 @@ IL CORSARO NERO
 (a è la più frequente)
 Fixed statistics: e a i o n r t l s c d m u p v g h b f z q j y k w x
 Text statistics:  a e i o r n l s t c d u p m v g f h b z q x w y j k
-Letters number: 627419
+Letters number: 627.419
 Guessed letters percentage: 49.44 %
 Guessed words percentage: 10.58 %
+
+
+LA DIVINA COMMEDIA
+Fixed statistics: e a i o n r t l s c d m u p v g h b f z q j y k w x
+Text statistics:  e a i o n r l t c s d m u p v h g f q b z j k w x y
+Letters number: 26.416
+Guessed letters percentage: 78.79 %
+Guessed words percentage: 28.22 %
 
 
 JANE EYRE
