@@ -101,4 +101,6 @@ def guess(file_encrypt, file_guessed):
 
     writeGuessedFile(file_encrypt, file_guessed, orderedFixedStat, orderedTextStat)
 
+    print "Guessing done"
+
 

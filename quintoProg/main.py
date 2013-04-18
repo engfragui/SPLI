@@ -1,15 +1,11 @@
+# python 2.7.3
+
 """
 Before running this main you have to:
 1) Create a directory with name "example"
 2) Put file "example.txt" inside the directory --> directory and file has to have the same name
 
 At the and, in the directory you will see "example_encrypt.txt", "example_decrypt.txt", "example_guessed.txt"
-
-If you want to color your output:
-print '\033[95m' + "prova" + '\033[0m' --> fucsia
-print '\033[94m' + "prova" + '\033[0m' --> blu
-print '\033[92m' + "prova" + '\033[0m' --> verde
-print '\033[91m' + "prova" + '\033[0m' --> rosso
 """
 
 import encryptAndDecrypt
