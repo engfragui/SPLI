@@ -4,9 +4,9 @@
 """
 Before running this main you have to:
 1) Create a directory with name "example"
-2) Put file "example.txt" inside the directory --> directory and file has to have the same name
+2) Put file "example.ext" inside the directory --> directory and file has to have the same name
 
-At the and, in the directory you will see "example_encrypt.txt", "example_decrypt.txt", "example_guessed.txt"
+At the and, in the directory you will see "example_encrypt.ext", "example_decrypt.ext", "example_guessed.ext"......
 """
 
 import encryptAndDecrypt
