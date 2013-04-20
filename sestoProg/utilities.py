@@ -1,4 +1,5 @@
 from bitarray import bitarray
+import hashlib
 
 def bits(byte):
     for i in range(8):
@@ -78,7 +79,7 @@ def generate_keys(K, times):
     keys=[]
 
     for i in range(0, times):
-        key = K[i:] + K[:i]
+        key = K[(i % len(K)):] + K[:(i % len(K))]
         keys.append(key)
 
     return keys
@@ -92,3 +93,14 @@ def same_length(string1, string2):
         string1 = string1 + '0'
 
     return string1
+
+def get_md5_file(file):
+
+    f = open(file, 'rb')
+    md5 = hashlib.md5()
+    while True:
+        data = f.read(128)
+        if not data:
+            break
+        md5.update(data)
+    return md5.hexdigest()
