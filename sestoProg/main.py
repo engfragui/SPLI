@@ -1,5 +1,9 @@
 # python 3.3.0
 # please download bitarray from https://pypi.python.org/pypi/bitarray/
+# install bitarray:
+#     tar xzf bitarray-0.8.1.tar.gz
+#     cd bitarray-0.8.1
+#     python3 setup.py install
 
 """
 Before running this main you have to:
