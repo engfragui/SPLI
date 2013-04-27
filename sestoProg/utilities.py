@@ -39,7 +39,8 @@ def get_chunks_from_file(filename, len_chunk_bit):
     while(1):
         b = file.read(1) #read a byte
         if not b:
-            chunks.append(chunk)
+            if (chunk!=''):
+                chunks.append(chunk)
             break
         chunk = chunk + get_byte_array(b)
         n=n+1

@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     print ("\nWelcome!\n")
 
-    file = 'smile.jpg'
+    file = 'immagine.jpg' #'testo.txt'
     len_chunk_bit = 512 #typ = 512
     times = 16 #typ = 16
 
