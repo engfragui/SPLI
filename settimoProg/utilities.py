@@ -1,5 +1,5 @@
 from bitarray import bitarray
-import hashlib
+import time
 
 def bits(byte):
     for i in range(8):
@@ -72,36 +72,47 @@ def xor_strings(xs, ys):
     """
     return "".join(str(ord(x) ^ ord(y)) for x, y in zip(xs, ys))
 
-def generate_keys(K, times):
+def generate_keys(K, num_keys):
     """
     Generate keys from K, simply shifting the bits
     """
 
     keys=[]
 
-    for i in range(0, times):
+    for i in range(0, num_keys):
         key = K[(i % len(K)):] + K[:(i % len(K))]
         keys.append(key)
 
     return keys
 
-def same_length(string1, string2):
+def generate_random_key(len_K):
     """
-    Returns string1 adding zeros at the end, string1 will have string2 length
+    Generate a random number
     """
 
-    while (len(string1) < len(string2)):
-        string1 = string1 + '0'
+    now = time.time()
 
-    return string1
+    enter = input("Press Enter to stop the counter! ")
 
-def get_md5_file(file):
+    duration = time.time() - now
 
-    f = open(file, 'rb')
-    md5 = hashlib.md5()
-    while True:
-        data = f.read(128)
-        if not data:
-            break
-        md5.update(data)
-    return md5.hexdigest()
+    print(str(duration) + ' seconds')
+
+    # se voglio una chiave lunga 32 bit
+    # dovro' prendere 32 // 4 = 8 cifre di duration
+    num_figures = len_K // 4
+
+    decimals = ("%.*f" % (num_figures, duration)).split(".")[-1]
+
+    K = ''
+    for d in decimals:
+        key = str(bin(int(d))[2:])
+        while(len(key) < 4):
+            key = '0' + key
+        K = K + key
+
+    print('Key: ' + K)
+
+    print("")
+
+    return(K)

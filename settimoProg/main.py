@@ -14,10 +14,7 @@ At the and, in the directory you will see "example_encrypt.ext", "example_decryp
 """
 
 import encryptAndDecrypt
-import guessDecrypt
 import utilities
-
-import random
 import os
 
 if __name__ == "__main__":
@@ -25,39 +22,32 @@ if __name__ == "__main__":
     print ("\nWelcome!\n")
 
     file = 'immagine.jpg' #'testo.txt'
-    len_chunk_bit = 512 #typ = 512
-    times = 16 #typ = 16
+    len_chunk_bit = 32
 
-    len_K = 6 #typ = 64, to_guess = 16
-    K = ''
-    for i in range(0,len_K):
-        K = K + str(random.randrange(0, 2))
-    print('Key: ' + K)
+    len_K = len_chunk_bit #lunghezza chiave = lunghezza del chunk
+    print("Generating key KA...")
+    KA = utilities.generate_random_key(len_K)
+    print("Generating key KB...")
+    KB = utilities.generate_random_key(len_K)
 
     #prepare file names
     file_split = file.split(".")
     file_name = file_split[0]
     file_ext = file_split[1]
-    file_encrypt = file_name + "_encrypt." + file_ext
-    file_decrypt = file_name + "_decrypt." + file_ext
-    file_guessed = file_name + "_guessed." + file_ext
+    file_encryptA = file_name + "_encryptA." + file_ext
+    file_encryptB = file_name + "_encryptB." + file_ext
+    file_decryptA = file_name + "_decryptA." + file_ext
+    file_decryptB = file_name + "_decryptB." + file_ext
 
     #change directory
     os.chdir(file_name)
 
-    #encryption algorithm --> creation of file_encrypt
-    encryptAndDecrypt.encryption(file, len_chunk_bit, times, K, file_encrypt)
+    encryptAndDecrypt.encryption(file, len_chunk_bit, KA, file_encryptA)
 
-    print ("\nEncryption done")
+    encryptAndDecrypt.encryption(file_encryptA, len_chunk_bit, KB, file_encryptB)
 
-    #decryption algorithm --> creation of file_decrypt
-    encryptAndDecrypt.decryption(file_encrypt, len_chunk_bit, times, K, file_decrypt)
+    encryptAndDecrypt.decryption(file_encryptB, len_chunk_bit, KA, file_decryptA)
 
-    print ("\nDecryption done")
+    encryptAndDecrypt.decryption(file_decryptA, len_chunk_bit, KB, file_decryptB)
 
-    #get md5 from file_decrypt
-    md5_file = utilities.get_md5_file(file_decrypt)
-    print('\nChosen file has md5: ' +  md5_file)
-
-    #guessing algorithm --> creation of file_guess
-    guessDecrypt.guess(file_encrypt, len_chunk_bit, times, len_K, file_guessed, md5_file) #you don't know K, just len_K
+    print('Job done!')
