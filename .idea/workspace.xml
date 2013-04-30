@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2884cc3b-e1b4-48d4-9501-ebc4775228a6" name="Default" comment="K.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/settimoProg/guessDecrypt.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settimoProg/encryptAndDecrypt.py" afterPath="$PROJECT_DIR$/settimoProg/encryptAndDecrypt.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settimoProg/main.py" afterPath="$PROJECT_DIR$/settimoProg/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settimoProg/utilities.py" afterPath="$PROJECT_DIR$/settimoProg/utilities.py" />
     </list>
     <ignored path="SPLI.iws" />
@@ -55,9 +52,9 @@
         <option value="$PROJECT_DIR$/sestoProg/utilities.py" />
         <option value="$PROJECT_DIR$/sestoProg/main.py" />
         <option value="$PROJECT_DIR$/quintoProg/main.py" />
-        <option value="$PROJECT_DIR$/settimoProg/utilities.py" />
         <option value="$PROJECT_DIR$/settimoProg/main.py" />
         <option value="$PROJECT_DIR$/settimoProg/encryptAndDecrypt.py" />
+        <option value="$PROJECT_DIR$/settimoProg/utilities.py" />
       </list>
     </option>
   </component>
@@ -92,7 +89,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -127,6 +123,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,17 +296,17 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41679388" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23944806" sideWeight="0.23969465" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19318181" sideWeight="0.7236641" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19967532" sideWeight="0.34961832" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979044" sideWeight="0.23867595" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27633587" sideWeight="0.9690223" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6503817" sideWeight="0.9690223" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41679388" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -394,63 +391,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sestoProg/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.3343949">
-          <folding />
-        </state>
+        <state line="54" column="0" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.3343949" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sestoProg/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="28" selection-start="975" selection-end="975" vertical-scroll-proportion="0.45382166">
-          <folding />
-        </state>
+        <state line="38" column="28" selection-start="975" selection-end="975" vertical-scroll-proportion="0.45382166" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quintoProg/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="15" selection-start="454" selection-end="454" vertical-scroll-proportion="0.68">
-          <folding>
-            <element signature="e#312#336#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="20" column="15" selection-start="454" selection-end="454" vertical-scroll-proportion="0.68" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sestoProg/encryptAndDecrypt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="27" selection-start="516" selection-end="535" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="27" selection-start="516" selection-end="535" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sestoProg/guessDecrypt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="27" selection-start="380" selection-end="432" vertical-scroll-proportion="0.71705425">
+        <state line="14" column="27" selection-start="380" selection-end="432" vertical-scroll-proportion="0.71705425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settimoProg/encryptAndDecrypt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="27" selection-start="960" selection-end="960" vertical-scroll-proportion="1.1744967" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settimoProg/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="80" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.8089172">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settimoProg/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="10" selection-start="2002" selection-end="2002" vertical-scroll-proportion="2.3407643">
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settimoProg/encryptAndDecrypt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="27" selection-start="960" selection-end="960" vertical-scroll-proportion="1.1744967">
+        <state line="98" column="36" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.40286624">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settimoProg/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="80" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.7315436">
-          <folding>
-            <element signature="e#499#523#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
