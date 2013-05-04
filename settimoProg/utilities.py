@@ -92,7 +92,7 @@ def generate_random_key(len_K):
 
     now = time.time()
 
-    enter = input("Press any key to stop the counter! ")
+    enter = input("Press enter to stop the counter! ")
 
     duration = time.time() - now
 
