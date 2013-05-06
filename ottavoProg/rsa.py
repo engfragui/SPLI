@@ -25,10 +25,10 @@ def encrypt_key(Fn):
     genero e tale che (e,Fn)=1
     """
 
-    e = random.randint(100,1000)
+    e = random.randint(10,100)
 
     while fractions.gcd(e,Fn) != 1:
-        e = random.randint(100,1000)
+        e = random.randint(10,100)
 
     return e
 

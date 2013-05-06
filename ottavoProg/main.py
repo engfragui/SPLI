@@ -13,7 +13,6 @@ Before running this main you have to:
 At the and, in the directory you will see "example_encrypt.ext", "example_decrypt.ext", "example_guessed.ext", ...
 """
 
-import encryptAndDecrypt
 import utilities
 import os
 import rsa
@@ -22,7 +21,8 @@ if __name__ == "__main__":
 
     print ("\nWelcome!\n")
 
-    file = 'immagine.jpg' #'testo.txt'
+    #file = 'immagine.jpg'
+    file = 'testo.txt'
 
     #prepare file names
     file_split = file.split(".")
@@ -33,6 +33,9 @@ if __name__ == "__main__":
 
     #change directory
     os.chdir(file_name)
+
+
+    #CALCOLI PRELIMINARI
 
     #genero primi p,q
     p = rsa.generate_prime_number()
@@ -56,18 +59,36 @@ if __name__ == "__main__":
     d = rsa.decrypt_key(e,Fn)
     print('d = ' + str(d))
 
-    #messaggio che voglio inviare
-    M = 10000
+    print("")
+
+
+    #ENCRYPTION
+
+    #estrapolo numero decimale M partendo dal file
+    M = utilities.get_decimal_from_file(file)
+    print('M = ' + str(M))
 
     #cripto messaggio
     C = rsa.encrypt_message(M,e,n)
     print('C = ' + str(C))
 
+    #scrivo decimale C su file
+    utilities.write_decimal_on_file(C, file_encrypt)
+
+    print("")
+
+
+    #DECRYPTION
+
+    #calcolo numero decimale C partendo dal file
+    C = utilities.get_decimal_from_file(file_encrypt)
+
     #decripto messaggio
     D = rsa.decrypt_message(C,d,n)
     print('D = ' + str(D))
 
+    #scrivo decimale D su file
+    utilities.write_decimal_on_file(D, file_decrypt)
+
+
     print('Job done!')
-
-
-
