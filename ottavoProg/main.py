@@ -13,7 +13,6 @@ Before running this main you have to:
 At the and, in the directory you will see "example_encrypt.ext", "example_decrypt.ext", "example_guessed.ext", ...
 """
 
-import utilities
 import os
 import rsa
 
@@ -21,8 +20,8 @@ if __name__ == "__main__":
 
     print ("\nWelcome!\n")
 
-    #file = 'immagine.jpg'
-    file = 'testo.txt'
+    file = 'immagine.png'
+    #file = 'testo.txt'
 
     #prepare file names
     file_split = file.split(".")
@@ -34,13 +33,23 @@ if __name__ == "__main__":
     #change directory
     os.chdir(file_name)
 
+    #numeri primi grandini
+    #2 ** 521 - 1
+    #2 ** 4253 - 1
+    #2 ** 11213 - 1
+    #2 ** 44497 - 1
+    #2 ** 1398269 - 1
+    #2 ** 3021377 - 1
+    #2 ** 20996011 - 1
+    #2 ** 30402457 - 1
+    #2 ** 32582657 - 1
 
     #CALCOLI PRELIMINARI
 
     #genero primi p,q
-    p = rsa.generate_prime_number()
+    p = 2 ** 521 - 1
     print('p = ' + str(p))
-    q = rsa.generate_prime_number()
+    q = 2 ** 4253 - 1
     print('q = ' + str(q))
 
     #calcolo n
@@ -59,36 +68,12 @@ if __name__ == "__main__":
     d = rsa.decrypt_key(e,Fn)
     print('d = ' + str(d))
 
-    print("")
-
 
     #ENCRYPTION
-
-    #estrapolo numero decimale M partendo dal file
-    M = utilities.get_decimal_from_file(file)
-    print('M = ' + str(M))
-
-    #cripto messaggio
-    C = rsa.encrypt_message(M,e,n)
-    print('C = ' + str(C))
-
-    #scrivo decimale C su file
-    utilities.write_decimal_on_file(C, file_encrypt)
-
-    print("")
-
+    rsa.encryption(file, e, n, file_encrypt)
 
     #DECRYPTION
+    rsa.decryption(file_encrypt, d, n, file_decrypt)
 
-    #calcolo numero decimale C partendo dal file
-    C = utilities.get_decimal_from_file(file_encrypt)
+    print('\nJob done!')
 
-    #decripto messaggio
-    D = rsa.decrypt_message(C,d,n)
-    print('D = ' + str(D))
-
-    #scrivo decimale D su file
-    utilities.write_decimal_on_file(D, file_decrypt)
-
-
-    print('Job done!')
