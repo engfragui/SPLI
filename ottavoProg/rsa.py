@@ -1,16 +1,6 @@
 import fractions
 import random
-
-def is_prime(a):
-    return all(a % i for i in range(2, a))
-
-def generate_prime_number():
-
-    p = random.randint(100,1000)
-    while not(is_prime(p)):
-        p = random.randint(100,1000)
-
-    return p
+import utilities
 
 def product_n(p,q):
 
@@ -25,10 +15,10 @@ def encrypt_key(Fn):
     genero e tale che (e,Fn)=1
     """
 
-    e = random.randint(10,100)
+    e = random.randint(1,Fn)
 
     while fractions.gcd(e,Fn) != 1:
-        e = random.randint(10,100)
+        e = random.randint(1,Fn)
 
     return e
 
@@ -53,10 +43,50 @@ def decrypt_key(e,Fn):
 
     return modinv(e,Fn)
 
-def encrypt_message(M,e,n):
+def modular_exponent(base, exponent, mod):
+    """
+    Modular exponentiation through binary decomposition.
+    """
 
-    return (M**e) % n
+    exponent = bin(exponent)[2:][::-1]
 
-def decrypt_message(C,d,n):
+    x = 1
+    power = base % mod
+    for i in range(0, len(exponent)):
+        if exponent[i] == '1':
+            x = (x * power) % mod
+        power = (power ** 2) % mod
+    return x
 
-    return (C**d) % n
+def encryption(file,e,n,file_encrypt):
+
+    print("\n-----Encryption-----")
+
+    #estrapolo numero decimale M partendo dal file
+    M = utilities.get_decimal_from_file(file)
+    print('M = ' + str(M))
+
+    if (M > n):
+        print('Il messaggio M non può essere più lungo del prodotto n')
+        exit(0)
+
+    #cripto messaggio
+    C = modular_exponent(M,e,n)
+    print('C = ' + str(C))
+
+    #scrivo decimale C su file
+    utilities.write_decimal_on_file(C, file_encrypt)
+
+def decryption(file_encrypt,d,n,file_decrypt):
+
+    print("\n-----Decryption-----")
+
+    #calcolo numero decimale C partendo dal file
+    C = utilities.get_decimal_from_file(file_encrypt)
+
+    #decripto messaggio
+    D = modular_exponent(C,d,n)
+    print('D = ' + str(D))
+
+    #scrivo decimale D su file
+    utilities.write_decimal_on_file(D, file_decrypt)
