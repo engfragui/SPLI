@@ -1,4 +1,5 @@
 from bitarray import bitarray
+import hashlib
 
 def bits(byte):
     for i in range(8):
@@ -56,3 +57,14 @@ def write_decimal_on_file(decimale, file):
         binario = '0' + binario
 
     write_str_on_file(file, binario)
+
+def get_md5_file(file):
+
+    f = open(file, 'rb')
+    md5 = hashlib.md5()
+    while True:
+        data = f.read(128)
+        if not data:
+            break
+        md5.update(data)
+    return md5.hexdigest()

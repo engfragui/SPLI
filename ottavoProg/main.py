@@ -15,12 +15,14 @@ At the and, in the directory you will see "example_encrypt.ext", "example_decryp
 
 import os
 import rsa
+import time
 
 if __name__ == "__main__":
 
-    print ("\nWelcome!\n")
+    print ("\nWelcome!")
 
     file = 'immagine.png'
+    #file = 'immagine2.jpg'
     #file = 'testo.txt'
 
     #prepare file names
@@ -33,41 +35,11 @@ if __name__ == "__main__":
     #change directory
     os.chdir(file_name)
 
-    #numeri primi grandini
-    #2 ** 521 - 1
-    #2 ** 4253 - 1
-    #2 ** 11213 - 1
-    #2 ** 44497 - 1
-    #2 ** 1398269 - 1
-    #2 ** 3021377 - 1
-    #2 ** 20996011 - 1
-    #2 ** 30402457 - 1
-    #2 ** 32582657 - 1
+    start = time.time()
+
 
     #CALCOLI PRELIMINARI
-
-    #genero primi p,q
-    p = 2 ** 521 - 1
-    print('p = ' + str(p))
-    q = 2 ** 4253 - 1
-    print('q = ' + str(q))
-
-    #calcolo n
-    n = rsa.product_n(p,q)
-    print('n = ' + str(n))
-
-    #calcolo Fn
-    Fn = rsa.Fn_Eulero(p,q)
-    print('Fn = ' + str(Fn))
-
-    #genero chiave pubblica e
-    e = rsa.encrypt_key(Fn)
-    print('e = ' + str(e))
-
-    #calcolo chiave privata d
-    d = rsa.decrypt_key(e,Fn)
-    print('d = ' + str(d))
-
+    (p, q, n, Fn, e, d) = rsa.preliminaries(file)
 
     #ENCRYPTION
     rsa.encryption(file, e, n, file_encrypt)
@@ -75,5 +47,13 @@ if __name__ == "__main__":
     #DECRYPTION
     rsa.decryption(file_encrypt, d, n, file_decrypt)
 
-    print('\nJob done!')
+    #CHECKING
+    rsa.checking(file,file_decrypt)
 
+
+    stop = time.time()
+
+    print('Time spent: ' + "%.2f" % (stop-start) + ' seconds')
+
+
+    print('\n\nJob done!')
