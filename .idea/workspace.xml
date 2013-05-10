@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2884cc3b-e1b4-48d4-9501-ebc4775228a6" name="Default" comment="K.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/quintoProg/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sestoProg/immagine/immagine.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sestoProg/testo/testo.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/settimoProg/immagine/immagine.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/settimoProg/testo/testo.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ottavoProg/immagine/immagine.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ottavoProg/immagine2/immagine2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ottavoProg/testo/testo.txt" afterPath="" />
     </list>
     <ignored path="SPLI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,16 +99,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SPLI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SPLI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -118,10 +106,10 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -287,11 +275,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977098" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21103896" sideWeight="0.21374045" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20779221" sideWeight="0.7038168" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21185064" sideWeight="0.41221374" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979044" sideWeight="0.23867595" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2961832" sideWeight="0.9690223" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58778626" sideWeight="0.9690223" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -399,24 +387,28 @@
         <state line="10" column="43" selection-start="783" selection-end="783" vertical-scroll-proportion="0.5154639" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ottavoProg/rsa.py">
+    <entry file="file://$PROJECT_DIR$/sestoProg/encryptAndDecrypt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ottavoProg/utilities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="36" selection-start="1083" selection-end="1083" vertical-scroll-proportion="1.970046" />
+        <state line="21" column="28" selection-start="501" selection-end="504" vertical-scroll-proportion="0.02388535" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ottavoProg/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="32" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.6543779" />
+        <state line="41" column="41" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sestoProg/encryptAndDecrypt.py">
+    <entry file="file://$PROJECT_DIR$/ottavoProg/rsa.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="501" selection-end="504" vertical-scroll-proportion="0.02388535">
+        <state line="90" column="16" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.45382166">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ottavoProg/utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="324" selection-end="324" vertical-scroll-proportion="0.3821656">
           <folding />
         </state>
       </provider>
